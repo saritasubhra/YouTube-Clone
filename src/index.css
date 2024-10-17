@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navlist {
+    @apply flex items-center gap-2 px-2 py-2.5 hover:bg-red-600 hover:text-white hover:rounded-full;
+  }
+  .navlist-selected {
+    @apply bg-red-600 text-white rounded-full;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+img {
+  cursor: pointer;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
